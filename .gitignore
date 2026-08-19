@@ -1,0 +1,10 @@
+# 依赖
+node_modules/
+.pnpm-store/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑备份
+*.swp
