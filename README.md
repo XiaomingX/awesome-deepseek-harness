@@ -1,5 +1,7 @@
 # awesome-deepseek-harness
 
+> 语言 / Language: [简体中文](README.md) · [English](README.en.md) · [한국어](README.ko.md) · [日本語](README.ja.md)
+
 > DeepSeek Harness (DSH) 生态精选清单：精选插件、工具与基础设施。
 > 来源：[0xsline/awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness)、`dsh-external/hub` 目录及公开的 `dsh-plugin` GitHub topic。
 > 本清单为中文精选版，过滤了大量重复/玩具类插件，保留值得借鉴的项目。
