@@ -1,8 +1,8 @@
 # awesome-deepseek-harness
 
 > A curated list of the DeepSeek Harness (DSH) ecosystem: plugins, tools, and infrastructure.
-> Sources: [0xsline/awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness), the `dsh-external/hub` catalog, and the public `dsh-plugin` GitHub topic.
-> This is an English curated edition: duplicated and toy-style plugins have been filtered out, keeping only projects worth learning from.
+> Sources: [0xsline/awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness), [omdsh-dev](https://github.com/omdsh-dev) (formerly `dsh-external`, the community plugin Hub), and the public `dsh-plugin` GitHub topic.
+> This is an English curated edition: duplicated and toy-style plugins have been filtered out, keeping only projects worth learning from. All entries are link-verified.
 
 ## Contents
 
@@ -48,6 +48,7 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-101](https://github.com/dsh-external/dsh-101)** — DSH documentation reading mode.
 - **[dsh-equip-engine](https://github.com/wuykjl/dsh-equip-engine)** — Task-driven plugin equip engine: dual retrieval, combo scoring, conflict detection.
 - **[dsh-claude-move](https://github.com/PerryLink/dsh-claude-move)** — Migration wizard: bring Claude Code, Codex, OpenCode, and Hermes sessions into DSH.
+- **[dsh_workflow](https://github.com/omdsh-dev/dsh_workflow)** — UltraCode-style workflow layer: upgrades one-shot multi-agent dispatch into a workflow that can be generated, saved, governed, observed, and resumed.
 
 ## Agents & Orchestration
 
@@ -73,11 +74,13 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-web-search-exa](https://github.com/TonyDua/dsh-web-search-exa)** — Zero-config Exa web search provider.
 - **[dsh-web-search-pro](https://github.com/anweat/dsh-web-search-pro)** — Persistent enhanced web search for DSH.
 - **[dsh-session-search](https://github.com/dsh-external/dsh-session-search)** — Index-free read-only search across sessions.
+- **[dsh-context-pruner](https://github.com/JohnXu22786/context-pruner)** — Session context triage: prunes stale/duplicate/failed/oversized blocks via heuristic rules, zero model dependency, with an audit report.
 - **[cross-harness-cite](https://github.com/dsh-external/cross-harness-cite)** — Cite past conversations across harnesses.
 
 ## Memory & Knowledge
 
 - **[dsh-hme](https://github.com/weopenfire-git/hme-plugin)** — Cross-session long-term memory.
+- **[dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon)** — Three-tier memory control plane: persistent runtime context, searchable project documents, pluggable long-term memory, and smart routing.
 - **[dsh-memory-vault](https://github.com/flymysql/dsh-memory)** — Cross-session memory vault.
 - **[dsh-memory-evolve](https://github.com/dsh-external/dsh-memory-evolve)** — Cross-session long-term memory + background self-evolution.
 - **[dsh-memento](https://github.com/PerryLink/dsh-memento)** — Bounded, layered, approval-gated memory.
@@ -104,6 +107,8 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-pathlink](https://github.com/penguin-oo/dsh-pathlink)** — Ctrl+click file paths and links in chat.
 - **[dsh-prompt-optimize](https://github.com/peterliucius/dsh-prompt-optimize)** — Rewrite composer drafts via an auxiliary LLM.
 - **[dsh-composer-history](https://github.com/PerryLink/dsh-composer-history)** — Terminal-style input history for the web composer.
+- **[dsh-at-file](https://github.com/omdsh-dev/dsh-at-file)** — Codex-style `@file` mentions: search workspace files in the composer and attach their paths.
+- **[dsh-annotation](https://github.com/omdsh-dev/dsh-annotation)** — Select-and-annotate: annotation blocks ship with the message and replies reference them one-by-one (zero core changes).
 
 ## UI, Themes & Interaction
 
@@ -118,6 +123,8 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-split-panes](https://github.com/dsh-external/dsh-split-panes)** — Split panes.
 - **[dsh-plugin-help](https://github.com/Semidia/dsh-plugin-help)** — Installed-plugins README summary panel.
 - **[dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel)** — MCP management console.
+- **[DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar)** — Extensible sidebar foundation (most-starred community plugin): unified workspace for file render/edit, terminal, Git, and sub-agents, with third-party page registration.
+- **[dsh-genui](https://github.com/omdsh-dev/dsh-genui)** — Interactive UI components rendered inline in assistant replies: layout, charts, forms, quizzes, Mermaid, 3D scenes, plus an action event loop back to the model.
 
 ## Dashboards & Session UX
 
@@ -132,6 +139,7 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue)** — Auto-resumes interrupted requests.
 - **[dsh-trajectory-debug](https://github.com/devmom/dsh-trajectory-debug)** — Trajectory waterfall & replay.
 - **[dsh-session-manager](https://github.com/Semidia/dsh-session-manager)** — Right-click context menu on sessions.
+- **[dsh-session-titler](https://github.com/JohnXu22786/session-titler)** — Two-phase session captioning: instant zero-cost keyword titles while active, cheapest-model refinement plus one-line summary when idle.
 - **[dsh-session-handoff](https://github.com/WeiYe6/dsh-session-handoff)** — Hand long sessions to a clean one.
 - **[dsh-event-auditor](https://github.com/qing3a/dsh-event-auditor)** — Event-flow audit panel.
 
@@ -165,7 +173,9 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-codex-oauth](https://github.com/WNJXYK/dsh-codex-oauth)** — ChatGPT/Codex subscription integration.
 - **[dsh-vision-router](https://github.com/ysr666/dsh-vision-router)** — Free vision for text-only agents.
 - **[dsh-advisor](https://github.com/dsh-external/dsh-advisor)** — A second model reviews each turn.
-- **[dsh-llm-fallbacks](https://github.com/dsh-external/dsh-llm-fallbacks)** — Role-based LLM retry/fallback.
+- **[dsh-auxiliary](https://github.com/dsh-plugins/dsh-auxiliary)** — Auxiliary-model plugin: routes vision, compaction, approval, subagent, and title tasks to separate models without touching the main conversation model.
+- **[dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit)** — Ten structured vision tools for text-only models: intent-aware image Q&A, long-screenshot OCR, and UI reconstruction.
+- **[dsh-llm-fallbacks](https://github.com/omdsh-dev/dsh-llm-fallbacks)** — Role-based LLM retry/fallback.
 - **[dsh-acp](https://github.com/dsh-external/dsh-acp)** — Client-neutral ACP adapter.
 - **[dsh-subagent-tools](https://github.com/lynx-gt/dsh-subagent-tools)** — Per-call model/provider overrides.
 - **[dsh-delegate-router](https://github.com/penguin-oo/dsh-delegate-router)** — Automatic Flash/Pro routing.
@@ -241,9 +251,11 @@ After reviewing the projects above, the following patterns are worth adopting in
 6. **Subagents & worktree isolation** — `dsh-background-agents` and `worktree-mgr` use Git worktrees to isolate parallel tasks, a concurrency-safe pattern.
 7. **Provider fallback & routing** — `dsh-llm-fallbacks`, `dsh-delegate-router`, and `dsh-smart-route` abstract multi-model scheduling into configurable routing.
 8. **Observability** — `dsh-replay` (time travel), `dsh-trajectory-debug` (trajectory replay), and `dsh-event-auditor` (event audit) are key tool shapes for debugging agents.
+9. **Auxiliary-LLM seam** — `dsh-auxiliary` routes vision, compression, approval, and titling to separate models without touching the main model, a core extension point for "let the main model focus on thinking".
+10. **Vision augmentation for text-only models** — `dsh-vision-toolkit` and `dsh-vision-router` show that "intent-aware vision plus pixel-level OCR/grounding" is a strong community need for multimodal-capable text models.
 
 ## Related Resources
 
 - [0xsline/awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) — The original full English list (includes more toy-style plugins).
-- [dsh-external/hub](https://github.com/dsh-external) — Official catalog.
+- [omdsh-dev (Oh My DSH)](https://github.com/omdsh-dev) — Community plugin Hub (formerly `dsh-external`, renamed; 106 repos), browseable by stars at [hub.omdsh.dev](https://hub.omdsh.dev).
 - DSH plugin spec: only packages declaring `dsh.bundle.patch` become active layers.

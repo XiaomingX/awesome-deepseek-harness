@@ -1,8 +1,8 @@
 # awesome-deepseek-harness
 
 > DeepSeek Harness（DSH）エコシステムの厳選リスト：プラグイン、ツール、インフラ。
-> 出典：[0xsline/awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness)、`dsh-external/hub` カタログ、および公開 `dsh-plugin` GitHub トピック。
-> 本リストは日本語厳選版であり、重複やお遊び目的のプラグインを除外し、参考になるプロジェクトのみを収録しています。
+> 出典：[0xsline/awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness)、[omdsh-dev](https://github.com/omdsh-dev)（旧 `dsh-external`、コミュニティプラグインハブ）、および公開 `dsh-plugin` GitHub トピック。
+> 本リストは日本語厳選版であり、重複やお遊び目的のプラグインを除外し、参考になるプロジェクトのみを収録しています。すべての項目はリンクの有効性を検証済みです。
 
 ## 目次
 
@@ -48,6 +48,7 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-101](https://github.com/dsh-external/dsh-101)** — DSH ドキュメント読み取りモード。
 - **[dsh-equip-engine](https://github.com/wuykjl/dsh-equip-engine)** — タスク駆動型プラグイン装備エンジン：二重検索、組み合わせスコアリング、競合検出。
 - **[dsh-claude-move](https://github.com/PerryLink/dsh-claude-move)** — 移行ウィザード：Claude Code、Codex、OpenCode、Hermes のセッションを DSH へ取り込む。
+- **[dsh_workflow](https://github.com/omdsh-dev/dsh_workflow)** — UltraCode 風ワークフロー層：一回性のマルチエージェントスケジューリングを生成・保存・ガバナンス・観測・再開可能なワークフローへ昇格。
 
 ## エージェントとオーケストレーション
 
@@ -73,11 +74,13 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-web-search-exa](https://github.com/TonyDua/dsh-web-search-exa)** — ゼロ設定の Exa Web 検索プロバイダ。
 - **[dsh-web-search-pro](https://github.com/anweat/dsh-web-search-pro)** — DSH 向け永続強化 Web 検索。
 - **[dsh-session-search](https://github.com/dsh-external/dsh-session-search)** — インデックス不要のセッション間読み取り専用検索。
+- **[dsh-context-pruner](https://github.com/JohnXu22786/context-pruner)** — セッションコンテキスト・トリアージ：ヒューリスティック規則で古い/重複/失敗/過大ブロックを整理、モデル依存なし、監査レポート付き。
 - **[cross-harness-cite](https://github.com/dsh-external/cross-harness-cite)** — 異なる harness 間で過去の対話を引用。
 
 ## メモリと知識
 
 - **[dsh-hme](https://github.com/weopenfire-git/hme-plugin)** — セッション間の長期メモリ。
+- **[dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon)** — 3 層メモリコントロールプレーン：永続ランタイムコンテキスト＋検索可能なプロジェクト文書＋プラグイン式長期メモリとスマートルーティング。
 - **[dsh-memory-vault](https://github.com/flymysql/dsh-memory)** — セッション間メモリボールト。
 - **[dsh-memory-evolve](https://github.com/dsh-external/dsh-memory-evolve)** — セッション間長期メモリ＋バックグラウンド自己進化。
 - **[dsh-memento](https://github.com/PerryLink/dsh-memento)** — 境界付き（bounded）、階層的、承認ゲート付きメモリ。
@@ -104,6 +107,8 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-pathlink](https://github.com/penguin-oo/dsh-pathlink)** — チャット内のファイルパスとリンクを Ctrl+クリック。
 - **[dsh-prompt-optimize](https://github.com/peterliucius/dsh-prompt-optimize)** — 補助 LLM でコンポーザ下書きを書き直し。
 - **[dsh-composer-history](https://github.com/PerryLink/dsh-composer-history)** — Web コンポーザ向けターミナル風入力履歴。
+- **[dsh-at-file](https://github.com/omdsh-dev/dsh-at-file)** — Codex 風 `@file` メンション：コンポーザでワークスペースファイルを検索しパスを添付。
+- **[dsh-annotation](https://github.com/omdsh-dev/dsh-annotation)** — テキスト選択注釈：注釈ブロックがメッセージと共に送信され、返信が一つずつ対照（コア変更なし）。
 
 ## UI、テーマとインタラクション
 
@@ -118,6 +123,8 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-split-panes](https://github.com/dsh-external/dsh-split-panes)** — 分割ペイン。
 - **[dsh-plugin-help](https://github.com/Semidia/dsh-plugin-help)** — インストール済みプラグインの README 要約パネル。
 - **[dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel)** — MCP 管理コンソール。
+- **[DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar)** — 拡張可能なサイドバーベース（コミュニティ最多スター）：ファイル表示/編集、ターミナル、Git、サブエージェントの統合ワークスペース、サードパーティページ登録対応。
+- **[dsh-genui](https://github.com/omdsh-dev/dsh-genui)** — 返信内にインラインでインタラクティブ UI を描画：レイアウト/チャート/フォーム/クイズ/Mermaid/3D シーン＋モデルへ戻るアクションループ。
 
 ## ダッシュボードとセッション体験
 
@@ -132,6 +139,7 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue)** — 中断されたリクエストを自動再開。
 - **[dsh-trajectory-debug](https://github.com/devmom/dsh-trajectory-debug)** — 軌跡ウォーターフォールと再生。
 - **[dsh-session-manager](https://github.com/Semidia/dsh-session-manager)** — セッションの右クリックコンテキストメニュー。
+- **[dsh-session-titler](https://github.com/JohnXu22786/session-titler)** — 2 段階セッション命名：稼働中はゼロコストのキーワード即時命名、アイドル時は最安モデルで仕上げ＋1 行要約。
 - **[dsh-session-handoff](https://github.com/WeiYe6/dsh-session-handoff)** — 長いセッションを清潔な新セッションへ引き継ぎ。
 - **[dsh-event-auditor](https://github.com/qing3a/dsh-event-auditor)** — イベントフロー監査パネル。
 
@@ -165,7 +173,9 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-codex-oauth](https://github.com/WNJXYK/dsh-codex-oauth)** — ChatGPT/Codex サブスクリプション統合。
 - **[dsh-vision-router](https://github.com/ysr666/dsh-vision-router)** — テキスト専用エージェント向け無料ビジョン。
 - **[dsh-advisor](https://github.com/dsh-external/dsh-advisor)** — 2 つ目のモデルが各ターンをレビュー。
-- **[dsh-llm-fallbacks](https://github.com/dsh-external/dsh-llm-fallbacks)** — 役割ベースの LLM 再試行／フォールバック。
+- **[dsh-auxiliary](https://github.com/dsh-plugins/dsh-auxiliary)** — 補助モデルプラグイン：メイン対話モデルを触らず、ビジョン/圧縮/承認/サブエージェント/タイトルなどを別モデルへルーティング。
+- **[dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit)** — テキスト専用モデル向け 10 の構造化ビジョンツール：意図認識画像 Q&A、長スクリーンショット OCR、UI 再構築。
+- **[dsh-llm-fallbacks](https://github.com/omdsh-dev/dsh-llm-fallbacks)** — 役割ベースの LLM 再試行／フォールバック。
 - **[dsh-acp](https://github.com/dsh-external/dsh-acp)** — クライアント非依存の ACP アダプタ。
 - **[dsh-subagent-tools](https://github.com/lynx-gt/dsh-subagent-tools)** — 呼び出しごとのモデル／プロバイダ上書き。
 - **[dsh-delegate-router](https://github.com/penguin-oo/dsh-delegate-router)** — 自動 Flash/Pro ルーティング。
@@ -241,9 +251,11 @@ dsh plugin --profile web add "github:owner/repo#ref"
 6. **サブエージェントと worktree 隔離** — `dsh-background-agents` と `worktree-mgr` は Git worktree で並列タスクを隔離する、並行性安全の実践パターンです。
 7. **プロバイダフォールバックとルーティング** — `dsh-llm-fallbacks`、`dsh-delegate-router`、`dsh-smart-route` はマルチモデルスケジューリングを設定可能なルーティングとして抽象化します。
 8. **オブザーバビリティ** — `dsh-replay`（タイムトラベル）、`dsh-trajectory-debug`（軌跡再生）、`dsh-event-auditor`（イベント監査）はエージェントをデバッグするための重要なツール形態です。
+9. **補助 LLM シーム（Auxiliary-LLM seam）** — `dsh-auxiliary` はメインモデルを触らずビジョン/圧縮/承認/タイトル等の低コストタスクを別モデルへルーティングし、"メインモデルは思考に集中"させる中核の拡張点です。
+10. **テキスト専用モデルのビジョン補強** — `dsh-vision-toolkit` と `dsh-vision-router` は、"意図認識ビジョン＋ピクセル単位の OCR/grounding"がテキストモデルへマルチモーダル能力を補う強いコミュニティニーズであることを示します。
 
 ## 関連リソース
 
 - [0xsline/awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) — 原文の完全な英語リスト（お遊び目的のプラグインがより多く含まれます）。
-- [dsh-external/hub](https://github.com/dsh-external) — 公式カタログ。
+- [omdsh-dev（Oh My DSH）](https://github.com/omdsh-dev) — コミュニティプラグインハブ（旧 `dsh-external` から改名、106 リポジトリ）。[hub.omdsh.dev](https://hub.omdsh.dev) でスター数順に閲覧可能。
 - DSH プラグイン仕様: `dsh.bundle.patch` を宣言したパッケージのみが有効なレイヤーとなります。

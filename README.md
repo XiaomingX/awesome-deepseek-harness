@@ -3,8 +3,8 @@
 > 语言 / Language: [简体中文](README.md) · [English](README.en.md) · [한국어](README.ko.md) · [日本語](README.ja.md)
 
 > DeepSeek Harness (DSH) 生态精选清单：精选插件、工具与基础设施。
-> 来源：[0xsline/awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness)、`dsh-external/hub` 目录及公开的 `dsh-plugin` GitHub topic。
-> 本清单为中文精选版，过滤了大量重复/玩具类插件，保留值得借鉴的项目。
+> 来源：[0xsline/awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness)、[omdsh-dev](https://github.com/omdsh-dev)（原 `dsh-external`，社区插件 Hub）及公开的 `dsh-plugin` GitHub topic。
+> 本清单为中文精选版，过滤了大量重复/玩具类插件，保留值得借鉴的项目。所有收录项均经过链接存活校验。
 
 ## 目录
 
@@ -50,6 +50,7 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-101](https://github.com/dsh-external/dsh-101)** — DSH 文档阅读模式。
 - **[dsh-equip-engine](https://github.com/wuykjl/dsh-equip-engine)** — 任务驱动的插件装备引擎：双路检索、组合打分、冲突检测。
 - **[dsh-claude-move](https://github.com/PerryLink/dsh-claude-move)** — 迁移向导：把 Claude Code、Codex、OpenCode、Hermes 会话迁入 DSH。
+- **[dsh_workflow](https://github.com/omdsh-dev/dsh_workflow)** — UltraCode 式 Workflow 层：把一次性多 Agent 调度升级为可生成/保存/治理/观察/恢复的工作流。
 
 ## 智能体与编排
 
@@ -75,11 +76,13 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-web-search-exa](https://github.com/TonyDua/dsh-web-search-exa)** — 零配置 Exa 网页搜索提供方。
 - **[dsh-web-search-pro](https://github.com/anweat/dsh-web-search-pro)** — DSH 持久增强型网页搜索。
 - **[dsh-session-search](https://github.com/dsh-external/dsh-session-search)** — 跨会话的无索引只读搜索。
+- **[dsh-context-pruner](https://github.com/JohnXu22786/context-pruner)** — 会话上下文分流：按启发式规则修剪过期/重复/失败/超大块，零模型依赖，产出审计报告。
 - **[cross-harness-cite](https://github.com/dsh-external/cross-harness-cite)** — 跨不同 harness 引用历史对话。
 
 ## 记忆与知识
 
 - **[dsh-hme](https://github.com/weopenfire-git/hme-plugin)** — 跨会话长期记忆。
+- **[dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon)** — 三层记忆控制面：持久运行时上下文 + 可检索项目文档 + 可插拔长期记忆与智能路由。
 - **[dsh-memory-vault](https://github.com/flymysql/dsh-memory)** — 跨会话记忆保险库。
 - **[dsh-memory-evolve](https://github.com/dsh-external/dsh-memory-evolve)** — 跨会话长期记忆 + 后台自我演进。
 - **[dsh-memento](https://github.com/PerryLink/dsh-memento)** — 有界、分层、需审批通过的记忆。
@@ -106,6 +109,8 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-pathlink](https://github.com/penguin-oo/dsh-pathlink)** — Ctrl+点击聊天中的文件路径与链接。
 - **[dsh-prompt-optimize](https://github.com/peterliucius/dsh-prompt-optimize)** — 用辅助 LLM 改写输入框草稿。
 - **[dsh-composer-history](https://github.com/PerryLink/dsh-composer-history)** — Web 输入框的终端式历史。
+- **[dsh-at-file](https://github.com/omdsh-dev/dsh-at-file)** — Codex 风格 `@file` 提及：在输入框搜索并引用工作区文件路径。
+- **[dsh-annotation](https://github.com/omdsh-dev/dsh-annotation)** — 选中文字批注：批注块随消息发送，回复逐条对照（零核心改动）。
 
 ## 界面、主题与交互
 
@@ -120,6 +125,8 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-split-panes](https://github.com/dsh-external/dsh-split-panes)** — 分屏面板。
 - **[dsh-plugin-help](https://github.com/Semidia/dsh-plugin-help)** — 已安装插件的 README 摘要面板。
 - **[dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel)** — MCP 管理控制台。
+- **[DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar)** — 可扩展侧边栏底座（社区最热门）：文件渲染/编辑、终端、Git、子代理统一工作区，支持三方注册新侧边栏页。
+- **[dsh-genui](https://github.com/omdsh-dev/dsh-genui)** — 在助手回复内联渲染交互式 UI：布局/图表/表单/测验/Mermaid/3D 场景 + 回传模型的动作循环。
 
 ## 仪表盘与会话体验
 
@@ -134,6 +141,7 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue)** — 自动恢复被中断的请求。
 - **[dsh-trajectory-debug](https://github.com/devmom/dsh-trajectory-debug)** — 轨迹瀑布流与回放。
 - **[dsh-session-manager](https://github.com/Semidia/dsh-session-manager)** — 会话右键上下文菜单。
+- **[dsh-session-titler](https://github.com/JohnXu22786/session-titler)** — 两阶段会话命名：活跃时零成本关键词即时命名，空闲时用最廉价模型润色 + 单行摘要。
 - **[dsh-session-handoff](https://github.com/WeiYe6/dsh-session-handoff)** — 把长会话交接给干净的新会话。
 - **[dsh-event-auditor](https://github.com/qing3a/dsh-event-auditor)** — 事件流审计面板。
 
@@ -167,7 +175,9 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-codex-oauth](https://github.com/WNJXYK/dsh-codex-oauth)** — ChatGPT/Codex 订阅集成。
 - **[dsh-vision-router](https://github.com/ysr666/dsh-vision-router)** — 为纯文本智能体提供免费视觉能力。
 - **[dsh-advisor](https://github.com/dsh-external/dsh-advisor)** — 用第二个模型逐轮审查。
-- **[dsh-llm-fallbacks](https://github.com/dsh-external/dsh-llm-fallbacks)** — 基于角色的 LLM 重试/回退。
+- **[dsh-auxiliary](https://github.com/dsh-plugins/dsh-auxiliary)** — 辅助模型插件：不动主对话模型，为视觉/压缩/审批/子代理/标题等任务提供独立模型路由。
+- **[dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit)** — 为纯文本模型提供 10 个结构化视觉工具：意图感知图片问答、长截图 OCR、UI 还原。
+- **[dsh-llm-fallbacks](https://github.com/omdsh-dev/dsh-llm-fallbacks)** — 基于角色的 LLM 重试/回退。
 - **[dsh-acp](https://github.com/dsh-external/dsh-acp)** — 客户端无关的 ACP 适配器。
 - **[dsh-subagent-tools](https://github.com/lynx-gt/dsh-subagent-tools)** — 每次调用可覆盖模型/提供方。
 - **[dsh-delegate-router](https://github.com/penguin-oo/dsh-delegate-router)** — 自动 Flash/Pro 路由。
@@ -243,9 +253,11 @@ dsh plugin --profile web add "github:owner/repo#ref"
 6. **子代理与 worktree 隔离** — `dsh-background-agents`、`worktree-mgr` 用 Git worktree 隔离并行任务，是并发安全的实践范式。
 7. **Provider 回退与路由** — `dsh-llm-fallbacks`、`dsh-delegate-router`、`dsh-smart-route` 把多模型调度抽象为可配置路由。
 8. **可观测性** — `dsh-replay`（时间旅行）、`dsh-trajectory-debug`（轨迹回放）、`dsh-event-auditor`（事件审计）是调试 agent 的关键工具形态。
+9. **辅助模型接缝（Auxiliary-LLM seam）** — `dsh-auxiliary` 在不动主对话模型的前提下，把视觉/压缩/审批/标题等廉价任务路由到独立模型，是"主模型专注思考"的核心扩展点。
+10. **纯文本模型的视觉补强** — `dsh-vision-toolkit`、`dsh-vision-router` 揭示了"意图感知视觉 + 像素级 OCR/grounding"是为文本模型补齐多模态能力的社区强需求。
 
 ## 相关资源
 
 - [0xsline/awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) — 英文原版完整清单（含更多玩具类插件）。
-- [dsh-external/hub](https://github.com/dsh-external) — 官方聚合目录。
+- [omdsh-dev（Oh My DSH）](https://github.com/omdsh-dev) — 社区插件 Hub（原 `dsh-external` 已更名，106 个仓库），可在 [hub.omdsh.dev](https://hub.omdsh.dev) 按星标浏览。
 - DSH 插件开发规范：声明 `dsh.bundle.patch` 的包才成为激活层。

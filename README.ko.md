@@ -1,8 +1,8 @@
 # awesome-deepseek-harness
 
 > DeepSeek Harness(DSH) 생태계 큐레이션 목록: 플러그인, 도구 및 인프라.
-> 출처: [0xsline/awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness), `dsh-external/hub` 카탈로그 및 공개 `dsh-plugin` GitHub 토픽.
-> 본 문서는 한국어 큐레이션 판으로, 중복되거나 장난감 성격의 플러그인을 걸러내고 배울 가치가 있는 프로젝트만 수록했습니다.
+> 출처: [0xsline/awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness), [omdsh-dev](https://github.com/omdsh-dev)(이전 `dsh-external`, 커뮤니티 플러그인 허브) 및 공개 `dsh-plugin` GitHub 토픽.
+> 본 문서는 한국어 큐레이션 판으로, 중복되거나 장난감 성격의 플러그인을 걸러내고 배울 가치가 있는 프로젝트만 수록했습니다. 모든 항목은 링크 유효성을 검증했습니다.
 
 ## 목차
 
@@ -48,6 +48,7 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-101](https://github.com/dsh-external/dsh-101)** — DSH 문서 읽기 모드.
 - **[dsh-equip-engine](https://github.com/wuykjl/dsh-equip-engine)** — 작업 주도형 플러그인 장착 엔진: 이중 검색, 조합 채점, 충돌 감지.
 - **[dsh-claude-move](https://github.com/PerryLink/dsh-claude-move)** — 마이그레이션 마법사: Claude Code, Codex, OpenCode, Hermes 세션을 DSH로 가져옵니다.
+- **[dsh_workflow](https://github.com/omdsh-dev/dsh_workflow)** — UltraCode 스타일 워크플로 계층: 일회성 다중 에이전트 스케줄링을 생성/저장/거버넌스/관찰/재개 가능한 워크플로로 승격.
 
 ## 에이전트 및 오케스트레이션
 
@@ -73,11 +74,13 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-web-search-exa](https://github.com/TonyDua/dsh-web-search-exa)** — 제로 구성 Exa 웹 검색 제공자.
 - **[dsh-web-search-pro](https://github.com/anweat/dsh-web-search-pro)** — DSH용 영속 강화 웹 검색.
 - **[dsh-session-search](https://github.com/dsh-external/dsh-session-search)** — 인덱스 없는 세션 간 읽기 전용 검색.
+- **[dsh-context-pruner](https://github.com/JohnXu22786/context-pruner)** — 세션 컨텍스트 트라이지: 휴리스틱 규칙으로 오래된/중복/실패/과대 블록 정리, 모델 의존성 없음, 감사 보고서 제공.
 - **[cross-harness-cite](https://github.com/dsh-external/cross-harness-cite)** — 서로 다른 harness 간 과거 대화를 인용합니다.
 
 ## 메모리 및 지식
 
 - **[dsh-hme](https://github.com/weopenfire-git/hme-plugin)** — 세션 간 장기 메모리.
+- **[dsh-mnemon](https://github.com/omdsh-dev/dsh-mnemon)** — 3계층 메모리 컨트롤 플레인: 영속 런타임 컨텍스트 + 검색 가능한 프로젝트 문서 + 플러그형 장기 메모리와 스마트 라우팅.
 - **[dsh-memory-vault](https://github.com/flymysql/dsh-memory)** — 세션 간 메모리 볼트.
 - **[dsh-memory-evolve](https://github.com/dsh-external/dsh-memory-evolve)** — 세션 간 장기 메모리 + 백그라운드 자가 진화.
 - **[dsh-memento](https://github.com/PerryLink/dsh-memento)** — 유계(bounded), 계층적, 승인 기반 메모리.
@@ -104,6 +107,8 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-pathlink](https://github.com/penguin-oo/dsh-pathlink)** — 채팅에서 파일 경로와 링크를 Ctrl+클릭.
 - **[dsh-prompt-optimize](https://github.com/peterliucius/dsh-prompt-optimize)** — 보조 LLM으로 작성기 초안 재작성.
 - **[dsh-composer-history](https://github.com/PerryLink/dsh-composer-history)** — 웹 작성기를 위한 터미널 스타일 입력 기록.
+- **[dsh-at-file](https://github.com/omdsh-dev/dsh-at-file)** — Codex 스타일 `@file` 언급: 작성기에서 워크스페이스 파일을 검색하고 경로를 첨부.
+- **[dsh-annotation](https://github.com/omdsh-dev/dsh-annotation)** — 텍스트 선택 주석: 주석 블록이 메시지와 함께 전송되고 답변이 하나씩 대조(코어 변경 없음).
 
 ## UI, 테마 및 상호작용
 
@@ -118,6 +123,8 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-split-panes](https://github.com/dsh-external/dsh-split-panes)** — 분할 패널.
 - **[dsh-plugin-help](https://github.com/Semidia/dsh-plugin-help)** — 설치된 플러그인 README 요약 패널.
 - **[dsh-mcp-panel](https://github.com/PerryLink/dsh-mcp-panel)** — MCP 관리 콘솔.
+- **[DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar)** — 확장 가능한 사이드바 베이스(커뮤니티 최다 스타): 파일 렌더/편집, 터미널, Git, 하위 에이전트 통합 워크스페이스, 서드파티 페이지 등록 지원.
+- **[dsh-genui](https://github.com/omdsh-dev/dsh-genui)** — 답변 내 인라인 대화형 UI 컴포넌트: 레이아웃/차트/폼/퀴즈/Mermaid/3D 씬 + 모델로 돌아가는 액션 루프.
 
 ## 대시보드 및 세션 UX
 
@@ -132,6 +139,7 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue)** — 중단된 요청을 자동으로 재개.
 - **[dsh-trajectory-debug](https://github.com/devmom/dsh-trajectory-debug)** — 궤적 워터폴 및 재생.
 - **[dsh-session-manager](https://github.com/Semidia/dsh-session-manager)** — 세션에 대한 우클릭 컨텍스트 메뉴.
+- **[dsh-session-titler](https://github.com/JohnXu22786/session-titler)** — 2단계 세션 명명: 활성 시 제로 코스트 키워드 즉시 명명, 유휴 시 최저가 모델로 다듬기 + 한 줄 요약.
 - **[dsh-session-handoff](https://github.com/WeiYe6/dsh-session-handoff)** — 긴 세션을 깨끗한 새 세션으로 인계.
 - **[dsh-event-auditor](https://github.com/qing3a/dsh-event-auditor)** — 이벤트 흐름 감사 패널.
 
@@ -165,7 +173,9 @@ dsh plugin --profile web add "github:owner/repo#ref"
 - **[dsh-codex-oauth](https://github.com/WNJXYK/dsh-codex-oauth)** — ChatGPT/Codex 구독 통합.
 - **[dsh-vision-router](https://github.com/ysr666/dsh-vision-router)** — 텍스트 전용 에이전트를 위한 무료 비전.
 - **[dsh-advisor](https://github.com/dsh-external/dsh-advisor)** — 두 번째 모델이 매 턴을 검토.
-- **[dsh-llm-fallbacks](https://github.com/dsh-external/dsh-llm-fallbacks)** — 역할 기반 LLM 재시도/폴백.
+- **[dsh-auxiliary](https://github.com/dsh-plugins/dsh-auxiliary)** — 보조 모델 플러그인: 메인 대화 모델을 건드리지 않고 비전/압축/승인/하위 에이전트/제목 등을 별도 모델로 라우팅.
+- **[dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit)** — 텍스트 전용 모델용 10가지 구조화된 비전 도구: 의도 인식 이미지 Q&A, 긴 스크린샷 OCR, UI 재구성.
+- **[dsh-llm-fallbacks](https://github.com/omdsh-dev/dsh-llm-fallbacks)** — 역할 기반 LLM 재시도/폴백.
 - **[dsh-acp](https://github.com/dsh-external/dsh-acp)** — 클라이언트 중립적 ACP 어댑터.
 - **[dsh-subagent-tools](https://github.com/lynx-gt/dsh-subagent-tools)** — 호출별 모델/제공자 재정의.
 - **[dsh-delegate-router](https://github.com/penguin-oo/dsh-delegate-router)** — 자동 Flash/Pro 라우팅.
@@ -241,9 +251,11 @@ dsh plugin --profile web add "github:owner/repo#ref"
 6. **하위 에이전트 및 worktree 격리** — `dsh-background-agents`와 `worktree-mgr`은 Git worktree로 병렬 작업을 격리하는 동시성 안전 패턴입니다.
 7. **제공자 폴백 및 라우팅** — `dsh-llm-fallbacks`, `dsh-delegate-router`, `dsh-smart-route`는 멀티 모델 스케줄링을 구성 가능한 라우팅으로 추상화합니다.
 8. **관측 가능성(observability)** — `dsh-replay`(타임 트래블), `dsh-trajectory-debug`(궤적 재생), `dsh-event-auditor`(이벤트 감사)는 에이전트 디버깅을 위한 핵심 도구 형태입니다.
+9. **보조 LLM 심(Auxiliary-LLM seam)** — `dsh-auxiliary`는 메인 모델을 건드리지 않고 비전/압축/승인/제목 등의 저비용 작업을 별도 모델로 라우팅하며, "메인 모델은 사고에 집중"하게 하는 핵심 확장 지점입니다.
+10. **텍스트 전용 모델의 비전 보강** — `dsh-vision-toolkit`과 `dsh-vision-router`는 "의도 인식 비전 + 픽셀 수준 OCR/grounding"이 텍스트 모델에 멀티모달 능력을 보완하는 강한 커뮤니티 수요임을 보여줍니다.
 
 ## 관련 자료
 
 - [0xsline/awesome-deepseek-harness](https://github.com/0xsline/awesome-deepseek-harness) — 원본 전체 영문 목록(장난감 성격 플러그인이 더 많음).
-- [dsh-external/hub](https://github.com/dsh-external) — 공식 카탈로그.
+- [omdsh-dev(Oh My DSH)](https://github.com/omdsh-dev) — 커뮤니티 플러그인 허브(이전 `dsh-external`에서 개명, 106개 저장소), [hub.omdsh.dev](https://hub.omdsh.dev)에서 스타 기준으로 탐색 가능.
 - DSH 플러그인 사양: `dsh.bundle.patch`를 선언한 패키지만 활성 레이어가 됩니다.
